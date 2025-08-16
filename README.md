@@ -1,3 +1,3 @@
-Base structure for any project on gitsh
+Basic structure for any project on gh-pages
 
-Live: https://a2rp.github.io/base-structure
+Live: https://a2rp.github.io/basic-structure
