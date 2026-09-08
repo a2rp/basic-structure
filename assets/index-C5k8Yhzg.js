@@ -1,4 +1,4 @@
-import{d as e,L as a,j as r}from"./index-Bb2MAVDN.js";const t={Wrapper:e.div`
+import{d as e,L as a,j as r}from"./index-C5DIA8we.js";const t={Wrapper:e.div`
         width: min(100%, 1120px);
         margin: 0 auto;
     `,Hero:e.section`

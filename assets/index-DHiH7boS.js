@@ -1,4 +1,4 @@
-import{d as e,u as r,j as t,N as a}from"./index-Bb2MAVDN.js";const n={Wrapper:e.div`
+import{d as e,u as r,j as t,N as a}from"./index-C5DIA8we.js";const n={Wrapper:e.div`
         background-color: #111;
         padding: 15px;
         display: flex;
