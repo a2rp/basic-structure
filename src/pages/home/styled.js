@@ -1,97 +1,87 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Styled = {
     Wrapper: styled.div`
-        max-width: 1100px;
+        width: min(100%, 1120px);
         margin: 0 auto;
-        padding: 40px 20px;
-        color: #e6e9f0;
     `,
-
-    Head: styled.div`
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
-        align-items: center;
-        margin-bottom: 16px;
-        flex-wrap: wrap;
+    Hero: styled.section`
+        max-width: 760px;
+        padding: 48px 0 64px;
     `,
-
-    Title: styled.h2`
+    Eyebrow: styled.p`
+        margin: 0 0 14px;
+        color: #79b8ff;
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    `,
+    Title: styled.h1`
         margin: 0;
-        font-size: 22px;
+        color: #ffffff;
+        font-size: clamp(2.6rem, 8vw, 5.6rem);
+        line-height: 0.98;
+        letter-spacing: -0.07em;
     `,
-
-    Sub: styled.p`
-        margin: 4px 0 0;
-        color: #9aa4b2;
-        font-size: 14px;
+    Description: styled.p`
+        max-width: 650px;
+        margin: 26px 0 30px;
+        color: #b7c8da;
+        font-size: 1.1rem;
+        line-height: 1.7;
     `,
-
-    Search: styled.input`
-        width: 320px;
-        max-width: 100%;
-        padding: 10px 12px;
-        border-radius: 10px;
-        border: 1px solid #222634;
-        background: #0b0d12;
-        color: #e6e9f0;
-        outline: none;
-    `,
-
-    TableWrapper: styled.div`
-        width: 100%;
-        overflow-x: auto;
-        border-radius: 14px;
-    `,
-
-    Table: styled.table`
-        width: 100%;
-        min-width: 860px;
-        border-collapse: separate;
-        border-spacing: 0;
-        background: #151821;
-        border: 1px solid #222634;
-        border-radius: 14px;
-        overflow: hidden;
-
-        th,
-        td {
-            padding: 12px 14px;
-            text-align: left;
-            border-bottom: 1px solid #222634;
-            vertical-align: top;
-            font-size: 14px;
-        }
-        thead th {
-            background: #0f1320;
-            color: #cdd6e3;
-            font-weight: 600;
-        }
-        tbody tr:last-child td {
-            border-bottom: 0;
-        }
-        a {
-            color: #4f8cff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    `,
-
-    Tags: styled.div`
+    Actions: styled.div`
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 12px;
     `,
-
-    Tag: styled.span`
-        font-size: 12px;
-        padding: 4px 8px;
-        border: 1px solid #222634;
-        border-radius: 999px;
-        color: #cfd6e6;
-        background: #0f1115;
+    PrimaryLink: styled(Link)`
+        border-radius: 10px;
+        padding: 12px 16px;
+        background: #5ba8ff;
+        color: #06101e;
+        font-weight: 800;
+        text-decoration: none;
+        &:hover {
+            background: #86c2ff;
+        }
+    `,
+    SecondaryLink: styled.a`
+        border: 1px solid #345578;
+        border-radius: 10px;
+        padding: 11px 16px;
+        color: #b9dcff;
+        font-weight: 800;
+        text-decoration: none;
+        &:hover {
+            background: #142b46;
+        }
+    `,
+    FeatureGrid: styled.div`
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        @media (max-width: 760px) {
+            grid-template-columns: 1fr;
+        }
+    `,
+    FeatureCard: styled.article`
+        min-height: 170px;
+        padding: 22px;
+        border: 1px solid #263f5c;
+        border-radius: 16px;
+        background: #0d1d31;
+    `,
+    FeatureTitle: styled.h2`
+        margin: 0 0 10px;
+        color: #ffffff;
+        font-size: 1.05rem;
+    `,
+    FeatureDescription: styled.p`
+        margin: 0;
+        color: #9fb3ca;
+        line-height: 1.6;
     `,
 };

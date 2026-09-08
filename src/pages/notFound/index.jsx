@@ -1,18 +1,18 @@
 import React from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 
 const NotFound = () => {
     const navigate = useNavigate();
 
     return (
-        <Styled.Wrapper role="main" aria-labelledby="nf-title">
+        <Styled.Wrapper aria-labelledby="nf-title">
             <Styled.Inner>
 
                 <Styled.Code>404</Styled.Code>
                 <Styled.Title id="nf-title">Page not found</Styled.Title>
                 <Styled.Subtitle>
-                    The page you're looking for may have moved, been renamed, or never existed.
+                    The page you requested does not exist in this starter project.
                 </Styled.Subtitle>
 
                 <Styled.Actions>
