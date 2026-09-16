@@ -1,4 +1,4 @@
-import{d as n,j as e}from"./index-C5DIA8we.js";const r={Wrapper:n.div`
+import{d as n,j as e}from"./index-BsCwC751.js";const r={Wrapper:n.div`
         width: min(100%, 760px);
         margin: 0 auto;
     `,Eyebrow:n.p`
