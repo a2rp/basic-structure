@@ -35,7 +35,7 @@ const App = () => (
 
         <Styled.Footer>
             <Styled.FooterMain>
-                <span>&copy; {new Date().getFullYear()} Basic Structure</span>
+                <span>Copyright &copy; {new Date().getFullYear()} Basic Structure</span>
                 <span>
                     By{" "}
                     <a
@@ -46,6 +46,14 @@ const App = () => (
                         Ashish Ranjan
                     </a>
                 </span>
+                <nav aria-label="Footer links">
+                    <a href="https://github.com/a2rp" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://codepen.io/ash1198" target="_blank" rel="noopener noreferrer">CodePen</a>
+                    <a href="mailto:ash.ranjan09@gmail.com">Email</a>
+                    <a href="https://a2rp-donation-page.netlify.app/" target="_blank" rel="noopener noreferrer">Support</a>
+                    <a href="https://buymeacoffee.com/a2rp" target="_blank" rel="noopener noreferrer">Buy Me A Coffee</a>
+                    <a href="https://patreon.com/a2rp" target="_blank" rel="noopener noreferrer">Patreon</a>
+                </nav>
             </Styled.FooterMain>
         </Styled.Footer>
     </Styled.Wrapper>
