@@ -1,17 +1,27 @@
 # Basic Structure
 
-A practical Vite and React starter project with client-side routing, lazy-loaded pages, styled-components, and GitHub Pages deployment support.
+![Basic Structure preview](screenshot.png)
+
+A clean Vite and React starter that demonstrates a practical application shell, client-side routing, lazy-loaded pages, styled-components, and GitHub Pages deployment.
 
 ## Features
 
-- Vite and React setup.
-- React Router pages for Home, About, and Not Found.
-- Lazy route modules with a shared Suspense loading state.
-- Responsive fixed header and footer.
-- Styled-components for component-level styling.
-- GitHub Pages base path configured as `/basic-structure/`.
-- Post-build 404 fallback for static hosting.
-- No test setup or unnecessary UI framework dependencies.
+- Home, About, and Not Found routes
+- Lazy-loaded page modules with a shared Suspense fallback
+- Fixed responsive header with mobile navigation
+- Styled-components with clear page-level organization
+- Accessible controls, focus states, and semantic content
+- Icon-only social and support links
+- Floating back-to-top control
+- GitHub Pages base path and 404 fallback
+
+## Tech stack
+
+- React 18
+- Vite
+- React Router
+- styled-components
+- React Icons
 
 ## Run locally
 
@@ -20,59 +30,25 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite. The GitHub Pages route uses:
-
-```text
-/basic-structure/
-```
-
-## Production build
+## Build and deploy
 
 ```powershell
+npm run lint
 npm run build
-npm run preview
-```
-
-The build creates `dist/index.html` and a `dist/404.html` fallback.
-
-## Deploy to GitHub Pages
-
-```powershell
 npm run deploy
 ```
 
-The deploy script builds the project first and publishes the `dist` directory to the `gh-pages` branch.
+Live app: [https://a2rp.github.io/basic-structure/](https://a2rp.github.io/basic-structure/)
 
-## Project structure
+## Future prospects
 
-```text
-src/
-  components/       Shared route-aware components
-  pages/            Lazy-loaded page modules
-  App.jsx           Application shell and route declarations
-  App.styled.js     Header, footer, and loading styles
-  main.jsx          React entry point and BrowserRouter
-  index.css         Global styles
-```
+The starter can grow into a portfolio, documentation site, small dashboard, or multi-page product interface by adding route modules without changing the core application shell.
 
-## Author
+## Images
 
-**Ashish Ranjan**
-Full-Stack Web Developer
-
-- Portfolio: [ashishranjan.net](https://www.ashishranjan.net/)
-- GitHub: [github.com/a2rp](https://github.com/a2rp)
-- CodePen: [codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [facebook.com/theash.ashish](https://www.facebook.com/theash.ashish/)
-- YouTube: [Ashish Ranjan](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
-
-## Support
-
-- [Support page](https://a2rp-donation-page.netlify.app/)
-- [Buy Me a Coffee](https://buymeacoffee.com/a2rp)
-- [Patreon](https://www.patreon.com/a2rp)
+- `screenshot.png`: fresh home-screen preview used in this README
+- `public/preview.png`: local social sharing image
+- `public/logo.png`: brand mark used in the header
 
 ## License
 
@@ -80,16 +56,16 @@ This project is available under the MIT License. See [LICENSE](LICENSE).
 
 ## Links
 
-- Portfolio: [https://www.ashishranjan.net](https://www.ashishranjan.net)
+- Portfolio: [https://www.ashishranjan.net/](https://www.ashishranjan.net/)
 - GitHub: [https://github.com/a2rp](https://github.com/a2rp)
 - CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
 - LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
 - Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
 - YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
+- Email: [mailto:ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
 
 ## Support
 
 - Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me A Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://patreon.com/a2rp](https://patreon.com/a2rp)
+- Buy Me a Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
+- Patreon: [https://www.patreon.com/a2rp](https://www.patreon.com/a2rp)

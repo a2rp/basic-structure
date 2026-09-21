@@ -3,7 +3,7 @@
     "private": true,
     "version": "1.0.0",
     "type": "module",
-    "description": "A Vite and React starter with client-side routing and GitHub Pages deployment",
+    "description": "A clean Vite and React starter with routing, lazy pages, and GitHub Pages support",
     "author": "Ashish Ranjan",
     "license": "MIT",
     "scripts": {
@@ -13,11 +13,12 @@
         "preview": "vite preview",
         "postbuild": "node -e \"const fs=require('fs');fs.copyFileSync('dist/index.html','dist/404.html')\"",
         "predeploy": "npm run build",
-        "deploy": "npx gh-pages -d dist -b gh-pages"
+        "deploy": "gh-pages -d dist -b gh-pages"
     },
     "dependencies": {
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
+        "react-icons": "^5.7.0",
         "react-router-dom": "^6.24.1",
         "styled-components": "^6.1.19"
     },
