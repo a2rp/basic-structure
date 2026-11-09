@@ -3,9 +3,11 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-// GitHub Pages serves this app from the repository path instead of the domain root.
+// Keep the router root aligned with Vite's configured development and Pages base.
+const routerBaseName = import.meta.env.BASE_URL;
+
 createRoot(document.getElementById("root")).render(
-    <BrowserRouter basename="/basic-structure">
+    <BrowserRouter basename={routerBaseName}>
         <App />
     </BrowserRouter>,
 );

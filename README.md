@@ -25,6 +25,8 @@ A clean Vite and React starter that demonstrates a practical application shell, 
 
 ## Run locally
 
+Requires Node.js 20.19 or newer and npm.
+
 ```powershell
 npm install
 npm run dev
